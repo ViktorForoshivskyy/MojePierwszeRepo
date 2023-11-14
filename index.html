@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #image {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <img id="image" src="przyroda.webp" alt="przyroda">
+
+    <button id="s">Pokaż</button>
+    <button id="h">Ukryj</button>
+
+    <script>
+document.querySelector("#h").addEventListener("click",ukryj)
+document.querySelector("#s").addEventListener("click",pokaz)
+
+        function pokaz(){
+            document.getElementById("image").style.display = 'block';
+        }
+
+        function ukryj(){
+            console.log('ffddfdf');
+            document.getElementById("image").style.display = 'none';
+        }
+    </script>
+</body>
+</html>
