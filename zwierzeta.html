@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="animalImage" src="kot.jpeg" alt="obrazek kota">
+
+    <button onclick="zmienObraz('pies')">Pies</button>
+    <button onclick="zmienObraz('kot')">Kot</button>
+    <button onclick="zmienObraz('lew')">Lew</button>
+
+    <script>
+        function zmienObraz(zwierze) {
+            var sciezka = '';
+
+            if(zwierze === 'pies'){
+                sciezka = 'pies.jpg';
+            }
+            else if(zwierze === 'kot'){
+                sciezka = 'kot.jpeg';
+            }
+            else if(zwierze === 'lew'){
+                sciezka = 'lew.jpg';
+            }
+
+            document.getElementById('animalImage').src = sciezka;
+        }
+    </script>
+</body>
+</html>
